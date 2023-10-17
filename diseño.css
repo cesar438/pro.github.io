@@ -6,7 +6,8 @@
     font-family: impact;
     letter-spacing: 0;
     text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
-}
+}  
+
 body{
     font-family: 'Poppins', sans-serif;
     background: url(fondoz.jpg);
@@ -16,6 +17,7 @@ body{
     background-attachment: fixed;
     color: yellow;
 }
+
 section{
     min-height: 97vh;
     display: flex;
@@ -31,6 +33,16 @@ section{
     box-shadow: 0 25px 45px rgba(0, 0, 0, .25);
     border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 30px;
+}
+
+@media (max-width: 500px) {
+    .card{
+        width: 100%;
+        background-color: rgb(102, 255, 0);
+        color: white;
+        width: 480px;
+
+    }
 }
 .top{
     display: flex;
@@ -89,11 +101,25 @@ section{
     outline: 3px dashed rgba(255, 255, 255, .25);
 }
 .middle .right{
-    margin: 70px 0px 10px 30px;
+    margin: 70px 0px 70px 0px;
+    font-size: 10px;
+}
+@media (max-width: 500px) {
+    .middle .right{
+        width: 100%;
+    }
 }
 .ex{
     color: red;
     font-size: 25px;
+}
+@media (max-width: 500px) {
+    .ex{
+        width: 100%;
+        color: black;
+        font-size: 15px;
+        margin: 0px 0px 5px 0px;
+    }
 }
 ul li{
     list-style-type: circle;
@@ -117,6 +143,7 @@ ul li{
 .social-icon i{
     font-size: 20px;
 }
+
 .social-icon span:hover{
     color: blue;
     background: white;
